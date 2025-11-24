@@ -1,0 +1,55 @@
+/* css/userbar.css */
+.user-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 15, 35, 0.95);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(100, 60, 180, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.user-panel img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #5a1a8f;
+}
+.user-panel .user-info {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+.user-panel .user-info strong {
+    color: #c7b8ff;
+}
+.user-panel .user-menu {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+.user-panel .user-menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+.user-panel .user-menu a:hover {
+    color: #6ab7ff;
+}
+.user-panel .user-menu a.logout {
+    color: #ff6b6b;
+}
+.user-panel .user-menu a.logout:hover {
+    color: #ff3b3b;
+}
+
+/* Отступ для контента под панелью */
+.content-wrapper {
+    margin-top: 60px;
+    padding: 0 20px;
+}

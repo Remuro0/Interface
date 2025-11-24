@@ -1,0 +1,96 @@
+/* css/view_servers.css */
+
+.content-wrapper {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.table-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background: rgba(30, 25, 45, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    box-shadow: 0 6px 16px rgba(50, 20, 100, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th {
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: #f0e6ff;
+    padding: 10px 12px;
+    font-weight: 600;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+}
+
+td {
+    padding: 10px 12px;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(100, 80, 130, 0.2);
+    font-size: 13px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:nth-child(even) {
+    background: rgba(40, 35, 55, 0.7);
+}
+
+tr:hover {
+    background: rgba(100, 80, 150, 0.2) !important;
+    transition: background 0.3s ease;
+}
+
+.actions {
+    text-align: center;
+    white-space: nowrap;
+    padding: 6px !important;
+}
+
+.btn-edit {
+    color: #6ab7ff;
+    background: rgba(106, 183, 255, 0.1);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin: 0 2px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.btn-edit:hover {
+    opacity: 0.9;
+}
+
+.status-online {
+    background: rgba(40, 200, 80, 0.3);
+    color: #aaffaa;
+}
+
+.status-offline {
+    background: rgba(200, 50, 50, 0.3);
+    color: #ffaaaa;
+}
+
+.status-maintenance {
+    background: rgba(255, 165, 0, 0.3);
+    color: #ffcc66;
+}

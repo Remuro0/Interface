@@ -1,0 +1,73 @@
+/* css/purchased.css */
+
+/* Стили для карточек покупок */
+.purchased-item {
+    background: rgba(30, 25, 45, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.purchased-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(100, 30, 200, 0.4);
+}
+.purchased-item h3 {
+    color: #6ab7ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.purchased-item .price {
+    color: #c7b8ff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.empty-purchases {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.2rem;
+    margin: 50px 0;
+    padding: 20px;
+}
+.empty-purchases img {
+    width: 60px;
+    opacity: 0.5;
+    margin-bottom: 15px;
+}
+
+/* Кнопка "Купить ещё" */
+.buy-more-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+.buy-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(100, 30, 200, 0.5);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .purchased-item {
+        padding: 15px;
+    }
+    .purchased-item h3 {
+        font-size: 1.2rem;
+    }
+    .buy-more-btn {
+        display: block;
+        width: 200px;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+}

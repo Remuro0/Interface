@@ -1,0 +1,201 @@
+/* css/tariffs.css */
+.tariffs-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tariffs-section h2 {
+    text-align: center;
+    color: #c7b8ff;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.package-card {
+    background: rgba(30, 25, 45, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-card.recommended {
+    border: 2px solid #ffcc00;
+    background: rgba(40, 30, 60, 0.9);
+    position: relative;
+}
+
+.package-card.recommended::before {
+    content: "🌟 РЕКОМЕНДУЕМ";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    padding: 2px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.package-card h3 {
+    color: #c7b8ff;
+    margin: 0 0 15px;
+    font-size: 1.4rem;
+}
+
+.package-card .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6ab7ff;
+    margin: 10px 0;
+}
+
+.package-card .price-label {
+    font-size: 0.9rem;
+    color: #a090cc;
+}
+
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+
+.package-card ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.package-card ul li::before {
+    content: "✓";
+    color: #00c853;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.package-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.package-card.recommended .btn {
+    background: linear-gradient(to right, #ff9800, #ffcc00);
+    color: #000;
+}
+
+/* Отдельные услуги */
+.services-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.services-list h2 {
+    text-align: center;
+    color: #c7b8ff;
+    margin: 40px 0 20px;
+    font-size: 1.8rem;
+}
+
+.service-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(100, 60, 180, 0.2);
+    font-size: 1rem;
+}
+
+.service-item:last-child {
+    border-bottom: none;
+}
+
+.service-item .desc {
+    color: #e0e0e0;
+    flex: 1;
+}
+
+.service-item .price {
+    color: #6ab7ff;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: right;
+}
+
+/* Карточка "Подключите услуги" */
+.connect-services {
+    background: rgba(40, 30, 60, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.connect-services h3 {
+    color: #c7b8ff;
+    margin: 0 0 15px;
+    font-size: 1.6rem;
+}
+
+.connect-services p {
+    color: #d0d0d0;
+    margin: 0 0 20px;
+    line-height: 1.5;
+}
+
+.connect-services .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(to right, #00c853, #64dd17);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .service-item .price {
+        text-align: left;
+    }
+    .connect-services {
+        padding: 20px;
+    }
+}

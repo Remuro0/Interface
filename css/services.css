@@ -1,0 +1,327 @@
+/* css/services.css */
+body {
+    background: linear-gradient(135deg, #0a0418, #160b2e);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #c7b8ff;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(150, 100, 255, 0.5);
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #a090cc;
+}
+
+.services-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background: rgba(30, 25, 45, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #c7b8ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.service-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6ab7ff;
+    margin: 10px 0;
+}
+
+.btn-cart {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(to right, #00c853, #64dd17);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    opacity: 0.9;
+}
+
+.actions {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    margin: 0 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-back {
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+}
+
+.btn-login {
+    background: linear-gradient(to right, #00c853, #64dd17);
+    color: white;
+}
+
+.btn-logout {
+    background: linear-gradient(to right, #ff3b3b, #ff6b6b);
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(100, 30, 200, 0.5);
+}
+
+.no-services {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.2rem;
+    margin: 60px 0;
+}
+/* css/services.css — ДОПОЛНЕНИЕ (если нужно отделить от userbar) */
+.services-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+.service-card {
+    background: rgba(30, 25, 45, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card h3 {
+    color: #c7b8ff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+.service-card p {
+    font-size: 0.95rem;
+    color: #d0d0d0;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.service-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6ab7ff;
+    margin: 10px 0;
+}
+.btn-cart {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(to right, #00c853, #64dd17);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn-cart:hover {
+    opacity: 0.9;
+}
+.no-services {
+    text-align: center;
+    color: #aaa;
+    font-size: 1.2rem;
+    margin: 60px 0;
+}
+
+/* Пакеты */
+.packages-section {
+    margin-top: 40px;
+}
+.packages-section h2 {
+    color: #c7b8ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+.package-card {
+    background: rgba(30, 25, 45, 0.8);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.package-card:hover {
+    transform: translateY(-5px);
+}
+.package-card h3 {
+    color: #c7b8ff;
+    margin: 0 0 15px;
+    font-size: 1.4rem;
+}
+.package-card .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #6ab7ff;
+    margin: 10px 0;
+}
+.package-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #d0d0d0;
+}
+.package-card ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+.package-card ul li::before {
+    content: "✓";
+    color: #00c853;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+.package-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Панель пользователя */
+.user-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(20, 15, 35, 0.95);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(100, 60, 180, 0.3);
+}
+
+.user-panel img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #5a1a8f;
+}
+
+.user-info {
+    font-size: 14px;
+    color: #e0e0e0;
+}
+
+.user-info strong {
+    color: #c7b8ff;
+}
+
+.user-info .role {
+    font-size: 12px;
+    color: #8ab7ff;
+}
+
+.user-menu {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.user-menu a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.user-menu a:hover {
+    color: #6ab7ff;
+}
+
+.user-menu a.logout {
+    color: #ff6b6b;
+}
+
+.user-menu a.logout:hover {
+    color: #ff3b3b;
+}

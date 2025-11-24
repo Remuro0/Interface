@@ -1,0 +1,37 @@
+/* css/payment_method.css */
+.payment-box {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(30, 25, 45, 0.95);
+    border-radius: 12px;
+    border: 1px solid #5a1a8f;
+    box-shadow: 0 4px 12px rgba(100, 30, 200, 0.3);
+}
+.payment-box h2 {
+    color: #c7b8ff;
+    text-align: center;
+}
+.payment-box label {
+    display: block;
+    color: #c7b8ff;
+    margin: 15px 0 5px;
+}
+.payment-box input[type="radio"] {
+    margin-right: 10px;
+}
+.payment-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.payment-box button:hover {
+    background: linear-gradient(to right, #5a1a8f, #3a0d6a);
+}

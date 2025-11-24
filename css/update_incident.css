@@ -1,0 +1,84 @@
+/* css/update_incident.css */
+
+.content-wrapper {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.form-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(30, 25, 45, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.form-card h2 {
+    color: #c7b8ff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.form-card h3 {
+    color: #c7b8ff;
+    margin: 0 0 10px;
+    font-size: 1.3rem;
+}
+
+.form-card p {
+    color: #d0d0d0;
+    line-height: 1.5;
+    margin: 5px 0;
+}
+
+.form-card label {
+    display: block;
+    color: #c7b8ff;
+    margin: 10px 0 5px;
+    font-size: 0.9rem;
+}
+
+.form-card select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    background: #1e192d;
+    color: white;
+    border: 1px solid #5a1a8f;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.save-btn {
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.save-btn:hover {
+    opacity: 0.9;
+}
+
+.cancel-btn {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.cancel-btn:hover {
+    text-decoration: underline;
+}

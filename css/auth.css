@@ -1,0 +1,84 @@
+/* css/auth.css */
+
+body {
+    background: linear-gradient(135deg, #0a0418, #160b2e);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-box {
+    background: rgba(30, 25, 45, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 24px rgba(100, 30, 200, 0.4);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+}
+
+.auth-box h2 {
+    text-align: center;
+    color: #c7b8ff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #5a1a8f;
+    border-radius: 6px;
+    background: #1e192d;
+    color: white;
+    box-sizing: border-box;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.auth-box .register-button {
+    background: linear-gradient(to right, #00c853, #64dd17);
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.message.error {
+    background: rgba(200, 50, 50, 0.3);
+    color: #ffaaaa;
+}
+
+.message.success {
+    background: rgba(40, 200, 80, 0.3);
+    color: #aaffaa;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.auth-links a {
+    color: #6ab7ff;
+    text-decoration: none;
+}

@@ -1,0 +1,138 @@
+/* css/engineer_dashboard.css */
+
+/* Общий контейнер */
+.content-wrapper {
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+/* Основной блок панели */
+.engineer-panel {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(30, 25, 45, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Заголовок */
+.engineer-header {
+    text-align: center;
+    color: #c7b8ff;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* Блок активных инцидентов */
+.incidents-section {
+    background: rgba(40, 30, 60, 0.9);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.incident-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(100, 80, 130, 0.2);
+}
+
+.incident-item:last-child {
+    border-bottom: none;
+}
+
+.incident-title {
+    color: #6ab7ff;
+    font-weight: bold;
+    flex: 1;
+}
+
+.incident-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status-open {
+    background: rgba(50, 100, 255, 0.3);
+    color: #aaffaa;
+}
+
+.status-in_progress {
+    background: rgba(255, 165, 0, 0.3);
+    color: #ffcc66;
+}
+
+.incident-actions a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 8px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+/* Блок серверов */
+.servers-section {
+    background: rgba(40, 30, 60, 0.9);
+    border: 1px solid rgba(100, 60, 180, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.server-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(100, 80, 130, 0.2);
+}
+
+.server-item:last-child {
+    border-bottom: none;
+}
+
+.server-name {
+    color: #c7b8ff;
+    font-weight: bold;
+    flex: 1;
+}
+
+.server-ip {
+    color: #d0d0d0;
+    margin: 0 10px;
+}
+
+.server-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status-online {
+    background: rgba(40, 200, 80, 0.3);
+    color: #aaffaa;
+}
+
+.status-offline {
+    background: rgba(200, 50, 50, 0.3);
+    color: #ffaaaa;
+}
+
+.status-maintenance {
+    background: rgba(255, 165, 0, 0.3);
+    color: #ffcc66;
+}

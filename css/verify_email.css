@@ -1,0 +1,58 @@
+/* css/verify_email.css */
+.verification-box {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(30, 25, 45, 0.95);
+    border-radius: 12px;
+    border: 1px solid #5a1a8f;
+    box-shadow: 0 4px 12px rgba(100, 30, 200, 0.3);
+}
+.verification-box h2 {
+    color: #c7b8ff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.verification-box p {
+    color: #d0d0d0;
+    margin: 10px 0 20px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+.verification-box input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    background: #1e192d;
+    border: 1px solid #5a1a8f;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.verification-box button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3a0d6a, #5a1a8f);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.verification-box button:hover {
+    background: linear-gradient(to right, #5a1a8f, #3a0d6a);
+}
+.error-message {
+    text-align: center;
+    padding: 10px;
+    background: rgba(200, 50, 50, 0.3);
+    color: #ffaaaa;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #8a3a3a;
+}
