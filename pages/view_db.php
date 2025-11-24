@@ -144,6 +144,14 @@ function toggleTablesMenu() {
     <hr>
     <a href="edit_profile.php"> 🖊️ Редактировать профиль</a>
     <a href="../create_table_form.php">➕ Создать таблицу</a>
+    <!-- Кнопка синхронизации -->
+<?php if ($_SESSION['role'] === 'admin'): ?>
+    <a href="sync_to_global.php"
+       onclick="return confirm('Вы уверены? Все данные в глобальной БД будут заменены данными из локальной!')"
+       style="background: linear-gradient(to right, #ff9800, #ffcc00); color: #000; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; text-decoration: none;">
+        🌐 Синхронизировать в глобальную БД
+    </a>
+<?php endif; ?>
     </button>
     <?php if ($_SESSION['role'] === 'admin'): ?>
         <a href="../backup.php"
